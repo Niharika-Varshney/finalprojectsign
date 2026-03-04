@@ -4,4 +4,3 @@ mediapipe
 numpy
 scikit-learn
 pillow
-cv2
