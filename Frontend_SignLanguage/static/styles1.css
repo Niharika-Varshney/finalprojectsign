@@ -1,0 +1,91 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: 'Lucida Console', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Container for everything */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center;     /* Center horizontally */
+    text-align: center;
+    gap: 20px; /* Space between elements */
+    padding: 20px;
+}
+
+/* Title styling */
+.title-container h1 {
+    font-size: 3em;
+    line-height: 1.2;
+}
+
+.title-container h4 {
+    font-size: 1.5em;
+}
+
+/* Predicted text display */
+#predicted-text {
+    font-size: 2em;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 10px;
+    min-width: 300px;
+    text-align: center;
+}
+
+/* Button styling */
+.button-row {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    gap: 15px;               /* Space between buttons */
+    flex-wrap: wrap;         /* Wrap if screen is small */
+}
+
+.button, .large-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover, .large-button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/* Optional: different colors for buttons */
+.button2 { background-color: #008CBA; }
+.button3 { background-color: #f44336; }
+.button4 { background-color: #e7e7e7; color: black; }
+
+/* Static text: "Predicted Text:" */
+p {
+    font-size: 1.5em;
+    color: #ccc;   /* grayish */
+}
+
+/* Dynamic text (predictions only) */
+#predictedText {
+    font-size: 1.5em;       /* bigger */
+    font-weight: normal;
+    color: grey;       /* neon cyan */
+}
